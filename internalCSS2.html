@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: orange
+        }
+
+        h4 {
+            color: orange;
+        }
+
+        h3 {
+            color: orange;
+        }
+
+        div {
+            background-color: rgb(204, 188, 43);
+            padding: 5px;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML/CSS</h1>
+    <h3>วิธีการนำ CSS ไปใช้กับ HTML มีอยู่ 3 วิธี ดังนี้</h3>
+    <h4>1. liline</h4>
+    <p>เป็นการเขียน CSS เข้าไปในแท็ก HTML โดยใช้ style attribute
+        ข้อดี : ง่ายและสะดวกในการทำงาน เพราะเขียนลงไปใน Tag ได้เลยข้อเสีย : โค๊ดไม่ระเบียบ ดูรกไม่สวยงาม, ทำให้ไฟล์ html
+        มีขนาดที่ใหญ่ขึ้น และ ในกรณีที่ต้องการแก้ css ตรงจุดนั้น จะต้องตามไปแก้ทุกไฟล์ ไม่สามารถ rewrite CSS ได้</p>
+    <div>
+        <pre><code>  &lt;p style ="color:#ffffff"&gt;ตัวหนังสือ&lt;/p&gt;</code></pre>
+    </div>
+    <h4>2. Internal</h4>
+    <pre><code>เป็นการเขียน CSS เข้าไปในไฟล์ HTML โดยจะแทรกอยู่ในแท็ก &lt;head&gt; ในไฟล์ HTML นั้นและมีแท็ก &lt;style&gt;…&lt;/style&gt; ครอบอยู่ข้อดี : ง่าย และสามารถครอบคลุมได้ทั้งหน้าเพจนั้นๆข้อเสีย : ไม่สามารถนำ css นี้ไปใช้กับหน้าอื่น ๆ ได้ง่าย เหมาะกับการแก้เฉพาะหน้าเท่านั้น</code></pre>
+    <div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;ชื่อเรื่องบทความ&lt;/title&gt;
+    &lt;meta name="description" content="อธิบายบทความ"&gt;
+    &lt;meta name="keywords" content="คีย์เวิร์ดของบทคความคั้นด้วยเครื่องหมาย คอมม่า"&gt;
+    &lt;style&gt;
+        body{
+            background: #f2f2f2;
+            padding: 10px;
+            margin: 10px;
+        }
+        p{color: #ff0000;
+}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;ส่วนเนื้อหาของบทความ&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+
+
+
+</body>
+
+</html>
